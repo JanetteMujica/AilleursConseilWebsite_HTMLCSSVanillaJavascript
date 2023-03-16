@@ -7,7 +7,7 @@
 
   <p align="center">
     Legible, aesthetic, user-friendly and easily navigable<br><br>HTML, CSS and Vanilla Javascript<br>Mobile First Approach<br>
-    <br><br>
+    <br>
     <a href="https://mathieubcd.com/" target="_blank">https://mathieubcd.com/</a>
   </p>
 </p>
