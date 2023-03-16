@@ -1,4 +1,3 @@
-# AilleursConseilWebsite_OlderVersion
 <p align="center">
   <a href="https://mathieubcd.com/" target="_blank">
     <img src="https://www.mathieubcd.com/images/icone_publications.jpg" alt="Logo" width=150 height=150>
