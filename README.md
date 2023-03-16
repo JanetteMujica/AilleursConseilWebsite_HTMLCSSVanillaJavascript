@@ -3,7 +3,7 @@
     <img src="https://www.mathieubcd.com/images/icone_publications.jpg" alt="Logo" width=150 height=150>
   </a>
 
-  <h3 align="center">Ailleurs Conseil Website - Older version 2021-2022</h3>
+  <h3 align="center">Ailleurs Conseil Website - Older Version 2021-2022</h3>
 
   <p align="center">
     Legible, aesthetic, user-friendly and easily navigable<br><br>HTML, CSS and Vanilla Javascript<br>Mobile First Approach<br>
