@@ -57,6 +57,30 @@ AilleursConseilWebsite/
 
 ## How to implement a collapsed side navigation menu bar with hamburger icon
 
+1) HTML
+
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="index.html" class="symbolenav" onclick="closeNav()" class= "ptrans"></a>
+
+    <a href="index.html#mandats" style="font-size:22.4px;" onclick="closeNav()">MANDATS</a>
+    <a href="soignante.html" onclick="closeNav()" class= "ptrans" >communauté soignante</a>
+    <a href="populaire.html" onclick="closeNav()" class= "ptrans">stratégie d'éducation populaire</a>
+    <a href="patient.html" onclick="closeNav()" class= "ptrans">partenariat patient en recherche</a>
+    <a href="equipe.html" style="font-size:22.4px;" onclick="closeNav()" class= "ptrans">ÉQUIPE</a>
+    <a href="mathieu.html" onclick="closeNav()" class= "ptrans">mathieu bouchard</a>
+    <a href="janette.html" onclick="closeNav()" class= "ptrans">janette mujica</a>
+
+    <a href="index.html#qr" style="font-size:22.4px;" onclick="closeNav()">Q&R</a>
+    <a href="index.html#fondements" style="font-size:22.4px;" onclick="closeNav()">FONDEMENTS</a>
+  </nav>
+
+
+3) CSS
+4) JavasCript
+5) MediaQueries in CSS
+
 ## Creation process
 
 In the links below, I share early wireframes of the project. From there on, I went through an iterative process. I consulted my instructor, classmates, and client. Their feedback guided my design decisions. 
