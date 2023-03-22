@@ -70,7 +70,7 @@ In my header, I have a hamburger icon which is the span with the character &#977
   </header>
 </div>
 ```
-NAVIGATION SIDE BAR
+<h4>NAVIGATION SIDE BAR</h4>
 The navigation bar is simply a collection of links (a tags) with onclick function closeNav() - when we click on a navigation link the menu closes automatically. I have also added a function to animate the page transition with class .ptrans which I wont elaborate here but codes are available to upload.
 
 ```text
@@ -93,15 +93,15 @@ The navigation bar is simply a collection of links (a tags) with onclick functio
 ```
 
 <h3> 2) CSS </h3>
-NORMALIZE
+<h4>NORMALIZATION</h4>
 I have used a <a href="https://github.com/necolas/normalize.css/" target="_blank">normalize.css</a> created by <a href="https://github.com/necolas" target="_blank">Nicolas Gallagher</a> that preserves useful defaults, unlike many CSS resets. 
 
-CSS AFFECTING BODY AND HTML
+<h4>CSS AFFECTING BODY AND HTML</h4>
 
-HAMBURGER ICON AND LOGO
+<h4>HAMBURGER ICON AND LOGO</h4>
 ```text
 ```
-NAVIGATION SIDE BAR
+<h4>NAVIGATION SIDE BAR</h4>
 ```text
 ```
 
