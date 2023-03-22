@@ -59,7 +59,7 @@ AilleursConseilWebsite/
 
 1) HTML
 
- <br>
+```text
   <nav id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -76,7 +76,7 @@ AilleursConseilWebsite/
     <a href="index.html#qr" style="font-size:22.4px;" onclick="closeNav()">Q&R</a>
     <a href="index.html#fondements" style="font-size:22.4px;" onclick="closeNav()">FONDEMENTS</a>
   </nav>
- <br>
+```
 
 3) CSS
 4) JavasCript
