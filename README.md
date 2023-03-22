@@ -154,6 +154,41 @@ a:hover {
 
 <h4>HAMBURGER ICON AND LOGO</h4>
 ```text
+/* HEADER NAVIGATION */
+
+.headernav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  position: fixed;
+  z-index: 100;
+  font-size: 2.5em;
+}
+
+.headerheadernav {
+  background-color: var(--beige);
+  position: fixed;
+  z-index: 90;
+  width: 100%;
+  height: 50px;
+}
+
+/* INDEX PAGE */
+.logorondactif {
+  width: 42px;
+}
+
+/* SECONDARY PAGE */
+.logoversindex {
+  background: url("../images/symbole.svg") no-repeat;
+  background-size: 42px;
+  width: 42px;
+  height: 42px;
+}
 ```
 <h4>NAVIGATION SIDE BAR</h4>
 ```text
