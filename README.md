@@ -96,7 +96,39 @@ The navigation bar is simply a collection of links (a tags) with onclick functio
 <h4>NORMALIZATION</h4>
 I have used a <a href="https://github.com/necolas/normalize.css/" target="_blank">normalize.css</a> created by <a href="https://github.com/necolas" target="_blank">Nicolas Gallagher</a> that preserves useful defaults, unlike many CSS resets. 
 
-<h4>CSS AFFECTING BODY AND HTML</h4>
+<h4>CSS AFFECTING GLOBAL STYLES</h4>
+
+```text
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: none;
+}
+
+:root {
+  --beige: #FFFAEA;
+  --jaune: #FADA80;
+  --orange: #FDA346;
+  --rouge: #FB483B;
+  --or: #FFD069;
+  --vert: #53B675;
+  --bleu: #4083BB;
+  --noir: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--beige);
+  font-size: 14px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+```
 
 <h4>HAMBURGER ICON AND LOGO</h4>
 ```text
