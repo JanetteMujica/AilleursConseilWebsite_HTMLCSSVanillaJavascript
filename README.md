@@ -57,7 +57,17 @@ AilleursConseilWebsite/
 
 ## How to implement a collapsed side navigation menu bar with hamburger icon
 
-1) HTML
+<h3> 1) HTML </h3>
+
+
+```text
+<div class="headerheadernav" id="navbar">
+  <header class="headernav">
+    <div><span onclick="openNav()">&#9776;</span></div>
+    <div><img src="images/symbolerouge.svg" alt="" class="logorondactif"></div>
+  </header>
+</div>
+```text
 
 ```text
   <nav id="mySidenav" class="sidenav">
