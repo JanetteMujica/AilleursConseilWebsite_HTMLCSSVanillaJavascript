@@ -3,7 +3,9 @@
     <img src="https://mathieubcd.com/ailleursconseilolderversion.mathieubcd.com/images/ailleurslogo.svg" alt="Logo" width=350 height=auto>
   </a>
 
-   <h3 align="center"><a href="https://mathieubcd.com/ailleursconseilolderversion.mathieubcd.com/" target="_blank">Visit Ailleurs Conseil Website</a></h3>  
+   
+     <a href="https://mathieubcd.com/ailleursconseilolderversion.mathieubcd.com/" target="_blank"><h3>Visit Ailleurs Conseil Website</h3></a>
+  
 
   <p align="center">
     Legible, aesthetic, user-friendly and easily navigable<br><br>HTML, CSS and Vanilla Javascript<br>Mobile First Approach<br>
