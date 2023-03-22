@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="544.353" height="453.256" viewBox="0 0 544.353 453.256">
+  <g id="Groupe_580" data-name="Groupe 580" transform="translate(0 -181.688)">
+    <path id="Tracé_322" data-name="Tracé 322" d="M511.026,638.9a64.69,64.69,0,0,0,80.01,62.786v172.6H493.23a75.27,75.27,0,0,0-150.531,0H197.4a132.731,132.731,0,0,0-59.6-257.806V421.028H591.035V576.115a64.623,64.623,0,0,0-80.01,62.785Z" transform="translate(-137.797 -239.339)" fill="#4083bb"/>
+    <ellipse id="Ellipse_55" data-name="Ellipse 55" cx="46.567" cy="46.567" rx="46.567" ry="46.567" transform="translate(71.396 237.567)" fill="#fffaea"/>
+    <ellipse id="Ellipse_56" data-name="Ellipse 56" cx="32.597" cy="32.597" rx="32.597" ry="32.597" transform="translate(226.618 333.805)" fill="#fffaea"/>
+    <path id="Tracé_323" data-name="Tracé 323" d="M299.8,516.732H149.265a75.27,75.27,0,0,1,150.532,0Z" transform="translate(55.637 118.213)" fill="#fffaea"/>
+    <ellipse id="Ellipse_57" data-name="Ellipse 57" cx="21.946" cy="21.946" rx="21.946" ry="21.946" transform="translate(179.192 476.181)" fill="#fffaea"/>
+    <path id="Tracé_324" data-name="Tracé 324" d="M289.919,564.6A132.781,132.781,0,0,1,197.4,691.122H137.8V433.317A132.694,132.694,0,0,1,289.919,564.6Z" transform="translate(-137.797 -56.178)" fill="#fffaea"/>
+    <path id="Tracé_325" data-name="Tracé 325" d="M238.7,431.462V557.033A64.641,64.641,0,1,1,223.33,429.6,64.181,64.181,0,0,1,238.7,431.462Z" transform="translate(214.543 -94.686)" fill="#fffaea"/>
+    <ellipse id="Ellipse_58" data-name="Ellipse 58" cx="21.946" cy="21.946" rx="21.946" ry="21.946" transform="translate(312.47 240.027)" fill="#fffaea"/>
+    <ellipse id="Ellipse_59" data-name="Ellipse 59" cx="10.626" cy="10.626" rx="10.626" ry="10.626" transform="translate(205.366 218.296)" fill="#fffaea"/>
+    <ellipse id="Ellipse_60" data-name="Ellipse 60" cx="10.626" cy="10.626" rx="10.626" ry="10.626" transform="translate(361.043 487.286)" fill="#fffaea"/>
+    <g id="bleu" transform="translate(448.92 181.688)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="95.434" height="453.256" fill="#4083bb"/>
+    </g>
+    <path id="Tracé_2891" data-name="Tracé 2891" d="M238.7,431.462V557.033A64.641,64.641,0,1,1,223.33,429.6,64.181,64.181,0,0,1,238.7,431.462Z" transform="translate(666.924 894.238) rotate(180)" fill="#fffaea"/>
+  </g>
+</svg>

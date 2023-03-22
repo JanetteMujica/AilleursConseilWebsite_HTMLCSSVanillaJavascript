@@ -1,0 +1,28 @@
+.transition-1 {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  top: 18px;
+  right: 14px;
+  /* transform: scale(.2,.2); */
+  border-radius: 100%;
+  z-index: 90;
+  background-color: var(--jaune);
+  /* border:20px solid #333; */
+  transition: 0.5s ease-in-out;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 6vh;
+  font-family: georgia;
+  font-style: italic;
+}
+
+.transition-1.is-active {
+  /* transform: scale(3,3); */
+  width: 400vh;
+  height: 400vh;
+  font-size: 400vh;
+  left: -50%;
+  top: -100%;
+}

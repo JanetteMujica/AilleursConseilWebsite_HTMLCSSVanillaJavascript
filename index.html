@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ailleurs conseil</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fada80">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#4083bb">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.typekit.net/otn5nmx.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/boitesmandats.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/pagetransitions.css">
+  <link rel="stylesheet" href="css/animonscroll.css">
+
+</head>
+
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="index.html" class="symbolenav" onclick="closeNav()" class= "ptrans"></a>
+
+    <a href="index.html#mandats" style="font-size:22.4px;" onclick="closeNav()">MANDATS</a>
+    <a href="soignante.html" onclick="closeNav()" class= "ptrans" >communauté soignante</a>
+    <a href="populaire.html" onclick="closeNav()" class= "ptrans">stratégie d'éducation populaire</a>
+    <a href="patient.html" onclick="closeNav()" class= "ptrans">partenariat patient en recherche</a>
+    <a href="equipe.html" style="font-size:22.4px;" onclick="closeNav()" class= "ptrans">ÉQUIPE</a>
+    <a href="mathieu.html" onclick="closeNav()" class= "ptrans">mathieu bouchard</a>
+    <a href="janette.html" onclick="closeNav()" class= "ptrans">janette mujica</a>
+
+    <a href="index.html#qr" style="font-size:22.4px;" onclick="closeNav()">Q&R</a>
+    <a href="index.html#fondements" style="font-size:22.4px;" onclick="closeNav()">FONDEMENTS</a>
+  </nav>
+
+<main class="main" id="main">
+<div class="transition transition-1 is-active"></div>
+
+<div class="topbar">
+  <div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+
+<div class="headerheadernav" id="navbar">
+  <header class="headernav">
+    <div><span onclick="openNav()">&#9776;</span></div>
+    <div><img src="images/symbolerouge.svg" alt="" class="logorondactif"></div>
+  </header>
+</div>
+
+  <!-- <header class="headernav" id="navbar">
+    <div><span style="cursor:pointer" onclick="openNav()">&#9776;</span></div>
+    <div><img src="images/symbolerouge.svg" alt="" class="logorondactif"></div>
+  </header> -->
+
+
+
+    <section class="paragraph vh100">
+      <img src="images/ailleurslogo.svg" alt="ailleurs, conseil pour changer le monde" class="ailleurslogo slide-up show-on-scroll is-visible">
+      <img src="images/demi.png" alt="" class="demi">
+      <p class="intro introaccueil column fade-in show-on-scroll">Nous cocréons des solutions pour accroitre le pouvoir d'action de communautés de praticiens en santé et en éducation.</p>
+
+      <button class="button down" id="mandatfleche" style="vertical-align:middle">
+        <a href="#mandats"><span>
+            <h3>MANDATS</h3>
+          </span>
+        </a>
+        </button>
+
+      <button class="button" style="vertical-align:middle"><a href="equipe.html"><span>
+            <h3>ÉQUIPE</h3>
+          </span></a></button>
+
+      <img src="images/smallarrow.svg" alt="" class="flechemandat fade-in show-on-scroll">
+
+    </section>
+
+    <section class="paragraph humaniser">
+      <h1 class="slide-up show-on-scroll is visible">Humaniser la santé et l'éducation</h1>
+      <p class="column fade-in show-on-scroll">Nous travaillons à l’intersection de la recherche et du terrain en mobilisant l’intelligence collective dans les organisations d’économie sociale pour coconstruire des contenus adaptés à leurs besoins stratégiques.</p>
+      <figure class="vennwrap">
+        <img src="images/loupe.svg" alt="" id="loupe">
+        <img src="images/flechehumaniser.svg" alt="" id="flechehumaniser">
+        <img src="images/venn.png" alt="" id="venn">
+        <h2 id="intelligence">Intelligence<br>collective</h2>
+        <h2 id="methodes">Méthodes<br>participatives</h2>
+        <h2 id="changement">CHANGEMENT SYSTÉMIQUE</h2>
+      </figure>
+    </section>
+
+<section class="paragraph" id="mandats">
+  <img src="images/loupemandat.svg" alt="" class="loupeintro column fade-in show-on-scroll">
+      <h1 class="slide-up show-on-scroll is visible">Mandats</h1>
+      <p class="column fade-in show-on-scroll">Nous collaborons avec une variété d’organisations incluant OBNL, coopératives, pôles universitaires, chaires de recherche et organismes de liaison et de transfert en innovation sociale (OLTIS).</p>
+      <!-- <div id="boitesmandats"></div> -->
+
+<section class="ensembledeboites">
+        <div class="boiteindividuelle">
+          <a href="soignante.html" class="overlaylink"></a>
+          <img src="images/soignante.png" alt=""class="imgboite">
+          <h2 class="h6bleu boitetitre">COMMUNAUTÉ SOIGNANTE</h2>
+          <p class="defis">Défis à relever</p>
+          <p class="boitepara">Rassembler les partenaires autour d’une vision partagée pour l’avenir de Communauté soignante pour favoriser son développment et assurer sa pérénnité.</p>
+          <button class="button bleu plus buttonplusbleu" style="vertical-align:middle"><a href="soignante.html"><span>
+                <h3>PLUS</h3>
+              </span></a></button>
+        </div>
+
+        <div class="boiteindividuelle">
+          <a href="populaire.html" class="overlaylink"></a>
+          <img src="images/populaire.png" alt="" class="imgboite">
+          <h2 class="h6rouge boitetitre">ÉDUCATION POPULAIRE</h2>
+          <p class="defis">Défis à relever</p>
+          <p class="boitepara">Habiliter des groupes mobilisés de patients à agir comme diffuseurs de leurs savoirs expérientiels auprès des proches aidants, gestionnaires et professionnels.</p>
+          <button class="button plus buttonplusrouge" style="vertical-align:middle"><a href="populaire.html"><span>
+                <h3>PLUS</h3>
+              </span></a></button>
+        </div>
+
+        <div class="boiteindividuelle">
+        <a href="patient.html" class="overlaylink"></a>
+        <img src="images/patient.png" alt="" class="imgboite">
+        <h2 class="h6vert boitetitre">PARTENARIAT PATIENT</h2>
+        <p class="defis">Défis à relever</p>
+        <p class="boitepara">Faire de la Communauté de pratique des patients et citoyens partenaires dans la recherche un acteur incontournable du système de santé au Québec.</p>
+        <button class="button vert plus buttonplusvert" style="vertical-align:middle"><a href="patient.html"><span>
+              <h3>PLUS</h3>
+            </span></a></button>
+        </div>
+  </section>
+
+    </section>
+
+<section class="paragrah parainterrogation" id="qr">
+  <img src="images/loupemandat.svg" alt="" class="loupeintro column fade-in show-on-scroll">
+      <!-- <img src="images/interrogation.svg" alt="" class="interrogation"> -->
+      <h1 class="slide-up show-on-scroll is visible">Q&R</h1>
+
+      <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h5 class="accordion">Qu'est-ce qu'une communauté de pratique?</h5>
+          <p class="accordionpara">Une communauté de pratique (CP) est un groupe de personnes qui ont des intérêts communs et qui se rejoignent à intervalle régulier pour apprendre les uns des autres en partageant leurs expériences.<br><br>Une CP
+            permet aux participants de se mettre en réseau et de développer leurs compétences par la mise en commun de connaissances appliquées à leur pratique.<br><br>Une CP permet aux participants d’organiser collectivement leur domaine d’activité
+            pour accroître leur pouvoir d’action.</p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h5 class="accordion">Pourquoi un accompagnement pour une communauté de pratique?</h5>
+          <p class="accordionpara">Le problème qu’on voit souvent avec les communautés de pratiques est que les participants ne savent pas quelles questions se poser ensemble pour organiser leurs échanges d’une manière qui soit productive et
+            enrichissante pour eux. En conséquence, les échanges tournent en rond et n’ont pas de direction claire. Avec le temps, les participants en viennent à sentir qu’ils perdent leur temps et la CP se démobilise.<br><br>Notre accompagnement se
+            base sur les principes de la RAP pour fournir une structure minimale qui permet aux participants de se poser ensemble les bonnes questions. Ça permet de donner un sens et une direction clairs à leurs travaux et de garder les gens
+            mobilisés.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h5 class="accordion">Qu'est-ce que la recherche-action participative?</h5>
+          <p class="accordionpara">
+            <span style = "font-weight: bold;" >Pour comprendre la recherche-action participative, il faut d’abord
+            comprendre l’approche traditionnelle de recherche.</span> <br><br>
+
+            Dans l’approche traditionnelle de recherche, le chercheur
+            monopolise le processus de construction des connaissances.<br><br>
+            Le chercheur interprète la réalité des membres d’une communauté
+            à partir de l’extérieur du champ de leur expérience vécue.<br><br>
+            Le chercheur va ensuite publier ses résultats dans des revues
+            académiques que les sujets de son étude ne lisent pas et qui leur sont
+            souvent difficile d’accès. <br><br>
+            C’est une activité essentiellement extractive dans laquelle le
+            chercheur prend sans redonner à la communauté qu’il étudie.<br><br>
+
+            <span style = "font-weight: bold;">En comparaison, dans la recherche-action participative:</span> <br><br>
+
+            Les « sujets » de la recherche deviennent des co-chercheurs
+            impliqués dans un processus d’interprétation collective de leur réalité
+            partagée.<br><br>
+            Les co-chercheurs sont impliqués à toutes les étapes à partir de la
+            conception du devis de recherche, jusqu’à la définition des questions, la
+            collecte de données, l’interprétation des données ensuite la diffusion des
+            résultats de recherche.<br><br>
+            En recherche-action participative, le chercheur se met au service de
+            la communauté. Il prend un rôle de facilitateur en fournissant une
+            structure minimale qui oriente les efforts de la communauté vers des
+            résultats qui vont faire une différence concrète dans leur vie.<br><br>
+            L’objectif est de développer une base collective de connaissances
+            permettant de créer un changement social qui améliore la situation des
+            membres de la communauté.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+<section class="paragraph paddingbottom vh100" id="fondements">
+  <img src="images/loupemandat.svg" alt="" class="loupeintro column fade-in show-on-scroll">
+      <h1 class="slide-up show-on-scroll is visible">Nos fondements</h1>
+      <p class="intro column fade-in show-on-scroll">Comment les usagers insatisfaits des soins reçus s'organisent-ils pour changer l'offre de service de notre système de santé ?</p>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/808807500?h=1931758e22&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Nos fondements"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+      <p class="recommandation citation column fade-in show-on-scroll">«La capacité à répondre à nos propres besoins dans les champs de la santé, de l'éducation et de l'alimentation, c'est une connaissance à reconstruire collectivement. <br><br>Je crois que nous sommes arrivés aux limites de la
+        commercialisation et de la professionnalisation de la réponse aux besoins humains. La pandémie nous l'a bien prouvé. <br><br>On doit trouver des moyens de se réapproprier de nos connaissances et de s'organiser collectivement entre usagers de
+        service pour répondre à nos propres besoins.» </p>
+    </section>
+
+
+      <figure class="nextpage">
+        <img src="images/couche.png" alt="" class="couche">
+        <img src="images/panneau.svg" alt="" class="panneau">
+        <p class="prochainmot">prochain</p>
+
+        <button class="button prochain" style="vertical-align:middle"><a href="equipe.html"><span><h3>ÉQUIPE</h3></span></a></button>
+      </figure>
+
+<footer class="footer">
+
+<figure class="calltoactionfigure">
+<div>
+<p class="footertext">VOULEZ-VOUS</p>
+<div class="textchangebox">
+  <div class="word w1">discuter ?</div>
+  <div class="word w2">prendre un café ?</div>
+  <div class="word w3">collaborer ?</div>
+</div>
+
+<button class="button ecriveznous" style="vertical-align:middle"><a href="mailto: mathieubcd@gmail.com, mujica.janette@gmail.com" target="_blank"><span><h3>CONTACTEZ-NOUS</h3></span></a></button>
+
+</div>
+
+</figure>
+
+
+
+      <figure class="contactfooter">
+        <div class="footermathieu">
+
+          <div class="contact">
+          <a href="mathieu.html">MATHIEU BOUCHARD</a>
+          <a href="https://ca.linkedin.com/in/mathieubcd" target="_blank">Ajoutez-moi sur LinkedIn</a>
+          </div>
+
+          <div class="cvpo">
+            <a href="https://www.mathieubcd.com/" target="_blank" class="portf">Publications</a>
+            <a href="pdf/cvMathieu.pdf" target="_blank" class="cv">CV</a>
+          </div>
+
+        </div>
+
+        <div class="footerjanette">
+
+          <div class="contact">
+            <a href="janette.html">JANETTE MUJICA</a>
+            <a href="https://ca.linkedin.com/in/janette-mujica-59272a6a" target="_blank">Ajoutez-moi sur LinkedIn</a>
+         </div>
+
+          <div class="cvpo">
+            <a href="https://www.ladeuxieme.site/" target="_blank" class="portf">Portfolio</a>
+            <a href="pdf/cvJanette.pdf" target="_blank" class="cv">CV</a>
+          </div>
+        </div>
+      </figure>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/sidenav.js"></script>
+    <script src="js/boitesmandats.js"></script>
+    <script src="js/pagetransitions.js"></script>
+    <script src="js/animonscroll.js"></script>
+    <!-- <script src="js/hidenav.js"></script> -->
+  </main>
+</body>
+
+</html>

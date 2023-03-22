@@ -1,0 +1,932 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: none;
+}
+
+:root {
+  --beige: #FFFAEA;
+  --jaune: #FADA80;
+  --orange: #FDA346;
+  --rouge: #FB483B;
+  --or: #FFD069;
+  --vert: #53B675;
+  --bleu: #4083BB;
+  --noir: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--beige);
+  font-size: 14px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+/* HEADER AND PARAGRAPH STYLING */
+h1 {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6em;
+  color: var(--noir);
+}
+
+h2 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6em;
+  color: var(--noir);
+}
+
+h3 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6em;
+  color: var(--beige);
+}
+
+h4 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--beige);
+}
+
+h5 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--noir);
+}
+
+h6 {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 600;
+  font-style:normal;
+  font-size: 1.6em;
+  margin: 0.67em 0;
+}
+
+p {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--noir);
+  line-height: 1.5;
+}
+
+
+.intro {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.6em;
+  color: var(--noir);
+  line-height: 1.5;
+}
+
+/* A LINKS STYLING */
+
+a {
+  color: var(--noir);
+  font-weight: bold;
+  /* text-decoration: underline; */
+  }
+  /* unvisited link */
+a:link {
+  color: var(--noir);
+  font-weight:bolder;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: var(--noir);
+  /* text-decoration: underline; */
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--rouge);
+}
+
+/* CURSOR */
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid var(--rouge);
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index:2000;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--rouge);
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+    z-index:2000;
+}
+
+.hover {
+  background-color: var(--noir);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  border-radius: 80px;
+  background-color: var(--rouge);
+  border: none;
+  color: var(--beige);
+  text-align: center;
+  font-size: .5em;
+  padding: .3em;
+  width: 100px;
+  transition: all 0.5s;
+  /* cursor: pointer; */
+  z-index: 50;
+}
+
+.button span {
+  /* cursor: pointer; */
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  font-size: 3.6em;
+  color: var(--beige);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-top: 0px;
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: -4px;
+}
+
+.button.down span:after {
+  transform: rotate(90deg);
+  top: 3px;
+}
+
+/* A LINKS STYLING */
+/* -- PROGRESS BAR-- */
+/* .header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+} */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 18px;
+  background: var(--jaune);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 18px;
+  background: var(--rouge);
+  width: 0%;
+}
+
+/* HEADER NAVIGATION */
+.logorondactif {
+  width: 42px;
+}
+
+.headernav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  position: fixed;
+  z-index: 100;
+  font-size: 2.5em;
+}
+
+.headerheadernav {
+  background-color: var(--beige);
+  position: fixed;
+  z-index: 90;
+  width: 100%;
+  height: 50px;
+}
+
+/* header#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--beige);
+  position: fixed;
+  transition: all .3s;
+  z-index: 100;
+  font-size: 2.5em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+} */
+
+/* SIDE MENU */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index:1500;
+}
+
+
+.symbolenav {
+  background: url("../images/symbole.svg") no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  margin-top:60px;
+  margin-bottom: 40px;
+  margin-left: 32px;
+}
+
+.sidenav a {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--beige);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 1em;
+}
+
+/* section paragraph */
+.paragraph {
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+.vh100 {
+  min-height: 100vh;
+  height: auto;
+}
+
+/* ACCUEIL */
+.ailleurslogo {
+  width: 250px;
+  position: relative;
+  top: 90px;
+  left: 0;
+}
+
+.introaccueil {
+  padding-top: 4em;
+}
+
+.demi {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  z-index: -100;
+  width: 60%;
+  min-width: 300px;
+  max-width: 800px;
+}
+
+.flechemandat {
+  width: 500px;
+  z-index: -80;
+  top: 310px;
+  left: 70px;
+  position: absolute;
+}
+
+/* FIGURE DIAGRAM VENN*/
+.vennwrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+#loupe {
+  position: absolute;
+  width: 175px;
+  z-index: -80;
+  top: -515px;
+  right: 280px;
+  transform: rotate(10deg)
+}
+
+#flechehumaniser {
+  position: absolute;
+  width: 300px;
+  z-index: -80;
+  top: -250px;
+  right: -10px;
+}
+
+#venn {
+  position: absolute;
+  width: 300px;
+  margin-top: 2em;
+  right: 1em;
+}
+
+#intelligence {
+  position: absolute;
+  font-size: 1em;
+  top: 90px;
+  right: 220px;
+}
+
+#methodes {
+  position: absolute;
+  font-size: 1em;
+  text-align: right;
+  top: 90px;
+  right: 25px;
+}
+
+#changement {
+  position: absolute;
+  font-size: 1em;
+  top: 220px;
+  right: 62px;
+}
+
+.loupeintro {
+  width: 200px;
+}
+
+/* LES BOITES MANDATS _ SANS JSON */
+.ensembledeboites {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.boiteindividuelle {
+display: relative;
+z-index:1;
+display: block;
+min-width: 300px;
+max-width: 100%;
+margin-left: 0;;
+margin-top: 2em;
+margin-bottom: 5em;
+margin-right: 0;
+height: 100%;
+/* box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.plus {
+  position: absolute;
+  right: 2em;
+}
+
+/* .overlaylink {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 100;
+} */
+
+.imgboite {
+width: 100%;
+}
+
+.boitetitre {
+
+}
+
+.defis {
+font-weight: bold;
+}
+
+.boitepara {
+
+}
+
+
+/* Q&R */
+.parainterrogation {
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 0;
+}
+
+.interrogation {
+  position: absolute;
+  width: 110px;
+  right: 18px;
+  top: 0px;
+}
+
+/* FONDEMENTS */
+
+video.action {
+  display: flex;
+  flex-grow: grow;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 4em;
+  padding-right: 1em;
+}
+
+.citation{padding-bottom: 4em;}
+
+/* PROCHAIN */
+.nextpage {
+  margin-top: 300px;
+  position: relative;
+}
+
+.couche {
+  position: absolute;
+  top: -185px;
+  z-index: -10;
+  right: 0px;
+}
+
+.panneau {
+  position: absolute;
+  width: 130px;
+  top: -264px;
+  right: 20px;
+}
+
+.prochain {
+  position: absolute;
+  font-size: .5em;
+  padding: .3em;
+  width: 130px;
+  top: -110px;
+  right: 20px;;
+}
+
+.prochain:hover span:after {
+  opacity: 1;
+  right: -10px;
+}
+
+.prochainmot {
+  position: absolute;
+  top: -253px;
+  right: 33px;
+  font-size: 13px;
+  font-family: ivyjournal, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--beige);
+  transform: rotate(-8deg);
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.footertext {
+  height: 200px;
+}
+
+.calltoactionfigure {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  background-color: var(--vert);
+  border: 1px solid var(--beige);
+}
+
+.textchangebox {
+  display: flex;
+  flex-direction: column;
+}
+
+.calltoactionfigure p {
+  padding-left: 15px;
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--noir);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.word {
+      font-size:3.4em;
+      font-weight:bold;
+      float:left;
+      opacity:0;
+      position:absolute;
+      bottom: 85px;
+      left: 14px;
+      color: var(--beige);
+      text-decoration: underline;
+    }
+
+.w1 {
+  animation: w1anim 15s infinite;
+}
+
+.w2 {
+  animation: w2anim 15s infinite;
+}
+
+.w3 {
+  animation: w3anim 15s infinite;
+}
+
+@keyframes w1anim {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  20% {
+    opacity:0;
+  }
+}
+
+
+@keyframes w2anim {
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  40% {
+    opacity:0;
+  }
+}
+
+@keyframes w3anim {
+  40%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  60% {
+    opacity:0;
+  }
+}
+
+.ecriveznous {
+  position: absolute;
+  font-size: .5em;
+  padding: .3em;
+  width: 160px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.ecriveznous:hover span:after {
+  opacity: 1;
+  right: -5px;
+}
+
+.contactfooter {}
+
+.contactfooter a {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--beige);
+  text-align: center;
+  background: var(--bleu);
+  border: 1px solid var(--beige);
+  text-decoration: none;
+  /* cursor: pointer; */
+}
+
+.footermathieu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact a {
+  padding: 15px 32px;
+  width: 100%;
+  display: block;
+}
+
+.cvpo a {
+  padding: 15px 32px;
+  display: inline-block;
+  float: left;
+}
+
+.portf {
+  width: 75%;
+}
+
+.cv {
+  width: 25%;
+}
+
+.contactfooter a:hover {
+  background-color: var(--or);
+}
+
+/* PAGE SECONDAIRE - MANDATS */
+.logoversindex {
+  background: url("../images/symbole.svg") no-repeat;
+  background-size: 42px;
+  width: 42px;
+  height: 42px;
+}
+
+
+.accueilmandat {
+  position: relative;
+  top: 30px;
+  height: 150px;
+}
+
+.backgroundmandat {
+  position: absolute;
+  bottom:0;
+  z-index:-2000;
+  width: 100%;
+  height: 170px;
+}
+
+.bleu {
+    background-color:  var(--bleu);
+}
+
+.rouge {
+    background-color:  var(--rouge);
+}
+
+.vert {
+    background-color:  var(--vert);
+}
+
+.mandattitre {
+  position: absolute;
+  text-align: right;
+  bottom:-15px;
+  right: 18px;
+  z-index:0;
+  width: auto;
+  -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.mandatlogo {
+  -webkit-animation: scale-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	animation: scale-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.soignante {
+  width: 230px;
+  position: absolute;
+  left:-30px;
+  bottom: -28px;
+}
+.populaire {
+    width: 180px;
+    height: 150px;
+    z-index:-1000;
+}
+
+.patient {
+  position: absolute;
+  left: 1em;
+  width: 140px;
+  height: 140px;
+}
+
+@-webkit-keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+.h6bleu {
+  color: var(--bleu);
+}
+
+.h6rouge {
+  color: var(--rouge);
+}
+
+.h6vert {
+  color: var(--vert);
+}
+
+.topmargin {
+  margin-top: 7em;
+}
+.paragraphmandat {
+    padding-top: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.loupemandat {
+  width: 150px;
+}
+
+.resultat {padding-bottom: 11em;}
+
+/* PAGE ÉQUIPE */
+.h1equipe {
+  margin-top: 200px;
+  font-size: 5em;
+  margin-bottom: 0.2em;
+}
+
+.histoire {
+  position: relative;
+  top: 200px;
+  padding-bottom: 16em;
+}
+
+.famille {
+  position: absolute;
+  right: 1em;
+  top: -170px;
+  width:200px;
+}
+
+/* PAGE INIDIVDUEL */
+
+.titreprof {
+color: var(--rouge);
+}
+
+.bio {
+  position: relative;
+  top: 140px;
+  margin-bottom: 4em;
+}
+
+.recommandation {
+  font-style: italic;
+}
+
+.paddingbottom {
+  padding-bottom: 4em;
+}
+
+
+.visitez {
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.paragraphrecommandation {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 4em;
+}

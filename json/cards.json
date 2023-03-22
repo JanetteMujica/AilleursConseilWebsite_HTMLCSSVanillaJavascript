@@ -1,0 +1,28 @@
+{
+  "cards" : [
+    {
+      "id" : 1,
+      "pic" : "../images/soignante.png",
+      "headline" : "COMMUNAUTÉ SOIGNANTE",
+      "subhead" : "Défis à relever",
+      "description" : "Rassembler les partenaires autour d’une vision partagée pour l’avenir de Communauté soignante.",
+      "info" : "soignante.html",
+      "type" : ["left", "right"]
+    },
+    {
+      "id" : 2,
+      "pic" : "../images/populaire.png",
+      "headline" : "ÉDUCATION POPULAIRE",
+      "subhead" : "Défis à relever",
+      "description" : "Habiliter des groupes mobilisés de patients à agir comme diffuseurs de leurs savoirs expérientiels auprès des proches aidants, gestionnaires et professionnels des soins de santé.",
+      "info" : "populaire.html"
+    },
+    {
+      "id" : 3,
+      "pic" : "../images/patient.png",
+      "headline" : "PARTENARIAT PATIENT",
+      "subhead" : "Défis à relever",
+      "description" : "Faire de la Communauté de pratique des patients et citoyens partenaires dans la recherche en santé au Québec un acteur incontournable dans l’écosystème provincial du système de santé apprenant."
+    },
+  ]
+}
