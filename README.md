@@ -59,6 +59,7 @@ AilleursConseilWebsite/
 
 <h3> 1) HTML </h3>
 
+In my header, I have a hamburger icon which is the span with the character &#9776; that has an onclick function "OpenNav()". I also have a logo that has a class of logorondactif on the index page and a class of logoversindex on secondary pages (if the user clicks, he will be directed to the index page).
 
 ```text
 <div class="headerheadernav" id="navbar">
@@ -67,7 +68,8 @@ AilleursConseilWebsite/
     <div><img src="images/symbolerouge.svg" alt="" class="logorondactif"></div>
   </header>
 </div>
-```text
+```
+The navigation bar is simply a collection of links (a tags) with onclick function closeNav() - when we click on a navigation link the menu closes automatically. I have also added a function to animate the page transition with class .ptrans which I wont elaborate here but codes are available to upload.
 
 ```text
   <nav id="mySidenav" class="sidenav">
