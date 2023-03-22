@@ -24,25 +24,34 @@
 ## What's included
 ```text
 
-PersonalWebsiteForAnAcademicReasearcher/
-    ├── ENG/
+AilleursConseilWebsite/
         └── css
+            └── accordion.css
+            └── animonscroll.css
+            └── boitesmandats.css
+            └── media.css
+            └── normalize.css
+            └── pagetransitions.css
+            └── styles.css
         └── images
         └── js
+            └── animonscroll.js
+            └── boitesmandats.js
+            └── cursor.js
+            └── hidenav.js
+            └── pagetransitions.js
+            └── progressbar.js
+            └── sidenav.js
+        └── json
+            └── cards.json
         └── pdf
-        conference.html
-        enseignement.html
+        equipe.html
         index.html
-        publications.html
-    └── FR/
-        └── css
-        └── images
-        └── js
-        └── pdf
-        conference.html
-        enseignement.html
-        index.html
-        publications.html
+        janette.html
+        mathieu.html
+        patient.html
+        populaire.html
+        soignante.html
 ```
 
 
