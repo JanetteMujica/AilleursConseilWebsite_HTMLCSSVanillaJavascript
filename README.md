@@ -58,7 +58,7 @@ AilleursConseilWebsite/
 ## How to implement a collapsed side navigation menu bar with hamburger icon
 
 <h3> 1) HTML </h3>
-
+HAMBURGER ICON AND LOGO
 In my header, I have a hamburger icon which is the span with the character &#9776; that has an onclick function "OpenNav()". I also have a logo that has a class of logorondactif on the index page and a class of logoversindex on secondary pages (if the user clicks, he will be directed to the index page).
 
 ```text
@@ -69,6 +69,7 @@ In my header, I have a hamburger icon which is the span with the character &#977
   </header>
 </div>
 ```
+NAVIGATION SIDE BAR
 The navigation bar is simply a collection of links (a tags) with onclick function closeNav() - when we click on a navigation link the menu closes automatically. I have also added a function to animate the page transition with class .ptrans which I wont elaborate here but codes are available to upload.
 
 ```text
@@ -90,9 +91,22 @@ The navigation bar is simply a collection of links (a tags) with onclick functio
   </nav>
 ```
 
-3) CSS
-4) JavasCript
-5) MediaQueries in CSS
+<h3> 2) CSS </h3>
+NORMALIZE
+I have used a <a href="https://github.com/necolas/normalize.css/" target="_blank">normalize.css</a> created by <a href="https://github.com/necolas" target="_blank">Nicolas Gallagher</a> that preserves useful defaults, unlike many CSS resets. 
+
+CSS AFFECTING BODY AND HTML
+
+HAMBURGER ICON AND LOGO
+```text
+```
+NAVIGATION SIDE BAR
+```text
+```
+
+
+5) JavasCript
+6) MediaQueries in CSS
 
 ## Creation process
 
