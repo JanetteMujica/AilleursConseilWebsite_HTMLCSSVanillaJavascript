@@ -153,7 +153,9 @@ a:hover {
 ```
 
 <h4>HAMBURGER ICON AND LOGO</h4>
+
 ```text
+
 /* HEADER NAVIGATION */
 
 .headernav {
@@ -189,6 +191,7 @@ a:hover {
   width: 42px;
   height: 42px;
 }
+
 ```
 <h4>NAVIGATION SIDE BAR</h4>
 ```text
