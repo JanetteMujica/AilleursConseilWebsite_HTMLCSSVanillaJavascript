@@ -352,7 +352,7 @@ x.addListener(myMediaFunction);
 To develop a reponsive website, I used media queries.
 
 <h4>STEP ONE</h4>
-With the help of the DevTools of the browser by setting it to the smalest screen available (ex. iPhone SE), code the website in one single column.
+With the help of the browser's DevTools by setting it to the smalest screen available (ex. iPhone SE), code the website in one single column.
 
 <h4>STEP TWO</h4>
 Define the breakpoints of your media queries. In my case, I chose these:
@@ -363,7 +363,7 @@ For desktop: @media only screen and (min-width: 1400px) { ... }
 
 
 <h4>STEP THREE</h4>
-Again, with the help of the DevTools of the browser, amend your sizes and layouts for larger screens following the breakpoints that you have chosen.
+Again, with the help of the browser's DevTools, amend your sizes and layouts for larger screens following the breakpoints that you have chosen.
 
 ```text
 
