@@ -15,7 +15,7 @@
 ## Table of contents
 
 - [What's included](#whats-included)
-- [How to implement an collapsed side navigation menu with hamburger icon](#How-to-implement-a-collapsed-side-navigation-menu-with-hamburger-icon)
+- [How to implement a collapsed side navigation menu bar with hamburger icon](#How-to-implement-a-collapsed-side-navigation-menu-bar-with-hamburger-icon)
 - [Creation process](#creation-process)
 - [Acknowledgement](#acknowledgement)
 - [Copyright and license](#copyright-and-license)
@@ -55,7 +55,7 @@ AilleursConseilWebsite/
         soignante.html
 ```
 
-## How to implement an collapsed side navigation menu with hamburger icon
+## How to implement a collapsed side navigation menu bar with hamburger icon
 
 ## Creation process
 
