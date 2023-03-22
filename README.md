@@ -15,7 +15,7 @@
 ## Table of contents
 
 - [What's included](#whats-included)
-- [How to implement a opening and closing side menu with hamburger icon](#How-to-implement-a-opening-and-closing-side-menu-with-hamburger-icon)
+- [How to implement an opening and closing side menu with hamburger icon](#How-to-implement-an-opening-and-closing-side-menu-with-hamburger-icon)
 - [Creation process](#creation-process)
 - [Acknowledgement](#acknowledgement)
 - [Copyright and license](#copyright-and-license)
@@ -55,7 +55,7 @@ AilleursConseilWebsite/
         soignante.html
 ```
 
-## How to implement a opening and closing side menu with hamburger icon
+## How to implement an opening and closing side menu with hamburger icon
 
 ## Creation process
 
