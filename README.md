@@ -363,7 +363,7 @@ For desktop: @media only screen and (min-width: 1400px) { ... }
 
 
 <h4>STEP THREE</h4>
-Again, with the help of the browser's DevTools, amend your sizes and layouts for larger screens following the breakpoints that you have chosen.
+Again, with the help of the browser's DevTools, amend your sizes and layouts with CSS for larger screens following the breakpoints that you have chosen.
 
 ```text
 
