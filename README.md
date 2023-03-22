@@ -349,6 +349,22 @@ x.addListener(myMediaFunction);
 
 <h3> 4) MEDIA QUERIES IN CSS</h3>
 
+To develop a reponsive website, I used media queries.
+
+<h4>STEP ONE</h4>
+With the help of the DevTools of the browser by setting it to the smalest screen available (ex. iPhone SE), code the website in one single column.
+
+<h4>STEP TWO</h4>
+Define the breakpoints of your media queries. In my case, I chose these:
+
+For tablets: @media only screen and (min-width: 600px) { ... }
+For laptop: @media only screen and (min-width: 980px) { ... }
+For desktop: @media only screen and (min-width: 1400px) { ... }
+
+
+<h4>STEP THREE</h4>
+Again, with the help of the DevTools of the browser, amend your sizes and layouts for larger screens following the breakpoints that you have chosen.
+
 ```text
 
 /* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
