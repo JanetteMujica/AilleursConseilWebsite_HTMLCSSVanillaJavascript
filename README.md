@@ -128,6 +128,30 @@ body {
   overflow-x: hidden;
 }
 
+/* A LINKS STYLING */
+
+a {
+  color: var(--noir);
+  font-weight: bold;
+  /* text-decoration: underline; */
+  }
+  /* unvisited link */
+a:link {
+  color: var(--noir);
+  font-weight:bolder;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: var(--noir);
+  /* text-decoration: underline; */
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--rouge);
+}
 ```
 
 <h4>HAMBURGER ICON AND LOGO</h4>
