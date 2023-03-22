@@ -347,20 +347,168 @@ x.addListener(myMediaFunction);
 
 ```
 
-7) MediaQueries in CSS
+<h3> 4) MEDIA QUERIES IN CSS</h3>
+
+```text
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
+@media only screen and (min-width: 600px) {
+  body {font-size: 18px;}
+
+  /* INDEX */
+  .headerheadernav {height: 60px;}
+  .logoversindex {width: 50px; height: 50px; background-size: 50px;}
+  .logorondactif {width: 50px;}
+  .ailleurslogo {width: 320px; top: 140px;}
+  .button {width: 150px;}
+  .button:hover span:after {right: -15px;}
+  .introaccueil {padding-top: 4.5em;}
+  .flechemandat {top: 340px;}
+  #loupe {top: -450px;}
+  #flechehumaniser {top: -200px;}
+  #venn {width: 400px;}
+  #intelligence {top: 125px; right: 295px;}
+  #methodes {top: 125px; right: 35px;}
+  #changement {top: 275px; right: 80px;}
+
+  /* FOOTER */
+  .prochain {width: 175px; top: -150px;}
+  .prochain:hover span:after {right: -20px;}
+  .couche {width: 562.5px; height: 282px; top: -283px;}
+  .panneau {width: 175px; top: -358px;}
+  .prochainmot {font-size: 17px; top: -340px; right: 40px;}
+  .contact a {width: 100%}
+  .portf {width: 75%;}
+  .footertext {height: 225px;}
+  .word {bottom: 100px;}
+  .ecriveznous {width: 200px;}
+  .ecriveznous:hover span:after {right: -10px;}
+
+  /*ÉQUIPE  */
+.histoire {padding-bottom: 20em;}
+.visitez {padding-top: 90px;}
+.paragraphrecommandation {padding-bottom: 11em;}
+
+  /* PAGES MANDAT */
+.accueilmandat {height: 250px;}
+.backgroundmandat {height:230px;}
+.soignante{width: 330px; left: -62px; bottom: -40px;}
+.populaire {position: absolute; bottom: 0; width: 260px; height: 230px;}
+.patient {width: 190px; height: 190px; bottom: 18px;}
+  }
+
+
+/* === DESKTOP LAYOUT INHERITS FROM MOBILE AND TABLET > 980PX === */
+@media only screen and (min-width: 980px) {
+  body {font-size: 24px;}
+
+  /* INDEX */
+  .headerheadernav {top:18px; font-size: 18px;}
+  .ailleurslogo {width: 320px; top: 160px;}
+  .button {width: 180px;}
+  .button:hover span:after {right: -13px;}
+  .introaccueil {padding-top: 4em;}
+  .humaniser {padding-top: 4em;}
+  .flechemandat {top: 370px; width: 730px;}
+  #loupe {top: -390px; right: 460px; width: 225px; transform: rotate(-220deg)}
+  #flechehumaniser {width: 400px; top: -170px;}
+  #venn {width: 600px; right: 60px; top: 80px;}
+  #intelligence {top: 260px; right: 500px; }
+  #methodes {top: 260px; right: 80px;}
+  #changement {top: 480px; right: 190px;}
+  .loupeintro {width: 250px;}
+  #mandats {padding-top: 240px;}
+
+
+  .boiteindividuelle {display: flex; flex-direction: column; width: 250px}
+  .buttonplusvert{position: static;}
+  .buttonplusrouge {position: static;}
+  .buttonplusbleu{position: static;}
+
+  /* FOOTER */
+  .prochain {width: 220px; top: -200px;}
+  .prochain:hover span:after {right: -25px;}
+  .couche {width: 675px; height: 338.4px; top: -340px;}
+  .panneau {width: 220px; top: -445px;}
+  .prochainmot {font-size: 20px; top: -422px; right: 45px;}
+  .footer {flex-direction: row;}
+  .calltoactionfigure {height: 353.8px; width: 62%; background-color: var(--bleu);}
+  .contactfooter {font-size: 18px; width: 38%;}
+  .contactfooter a {background-color: var(--vert);}
+  .contact a {padding: 20px 37px; }
+  .word {font-size: 3.1em; bottom: 140px;}
+  .ecriveznous {width: 250px;}
+  .ecriveznous:hover span:after {right: -10px;}
+  /* ÉQUIPE */
+  .famille {width: 300px; top: -220px;}
+  .bio {top: 250px;}
+  .loupemandat {width: 250px;}
+  .visitez {padding-top: 175px;}
+  }
+
+  .accueilmandat {height: 290px;}
+  .backgroundmandat {height:270px;}
+  .soignante{width: 390px; left: -62px; bottom: -46px;}
+  .populaire {position: absolute; bottom: 0; width: 300px; height: 270px;}
+  .patient {width: 220px; height: 220px; bottom: 24px;}
+
+/* === MUCH BIGGER DESKTOP LAYOUT INHERITS FROM MOBILE AND TABLET > 980PX === */
+@media only screen and (min-width: 1400px) {
+body {font-size: 28px;}
+
+/* INDEX */
+.headerheadernav {top: 18px; height: 60px;}
+.ailleurslogo {width: 320px; top: 160px;}
+.button {width: 220px;}
+.button:hover span:after {right: -20px;}
+.introaccueil {padding-top: 3em;}
+.humaniser {padding-top: 4em;}
+.flechemandat {top: 370px; width: 730px;}
+#loupe {top: -390px; right: 460px; width: 225px; transform: rotate(-220deg)}
+#flechehumaniser {width: 400px; top: -170px;}
+#venn {width: 650px; right: 60px; top: 0px;}
+#intelligence {top: 200px; right: 525px; }
+#methodes {top: 200px; right: 80px;}
+#changement {top: 440px; right: 190px;}
+.loupeintro {width: 250px;}
+#mandats {padding-top: 340px;}
+
+
+.boiteindividuelle {display: flex; flex-direction: column; width: 430px}
+.buttonplusvert{position: static;}
+.buttonplusrouge {position: static;}
+.buttonplusbleu{position: static;}
+
+/* FOOTER */
+.prochain {width: 220px; top: -200px;}
+.prochain:hover span:after {right: -20px;}
+.couche {width: 675px; height: 338.4px; top: -340px;}
+.panneau {width: 220px; top: -445px; right: 24px}
+.prochainmot {font-size: 20px; top: -422px; right: 45px;}
+.word {font-size: 4em; bottom: 120px;}
+.ecriveznous {width: 290px;}
+.ecriveznous:hover span:after {right: -10px;}
+
+
+/* ÉQUIPE */
+.famille {width: 300px; top: -220px;}
+.bio {top: 250px;}
+.loupemandat {width: 250px;}
+.visitez {padding-top: 320px;}
+}
+
+.accueilmandat {height: 290px;}
+.backgroundmandat {height:270px;}
+.soignante{width: 390px; left: -62px; bottom: -46px;}
+.populaire {position: absolute; bottom: 0; width: 300px; height: 270px;}
+.patient {width: 220px; height: 220px; bottom: 24px;}
+
+  }
+```
 
 ## Creation process
 
-In the links below, I share early wireframes of the project. From there on, I went through an iterative process. I consulted my instructor, classmates, and client. Their feedback guided my design decisions. 
-
-For example, I changed the hamburger menu for a simpler, visible, and straightforward menu system that makes the structure of the website much clearer. It also led me to reorganise the welcome page and bring forward the client's main message around his research orientation and carreer objective.
-
-- <a href="https://mathieubcd.com/midterm.mathieubcd.com/index.html" target="_blank">
-    Project</a>
-- <a href="https://mathieubcd.com/midterm.mathieubcd.com/style.html" target="_blank">
-    Style</a>
-- <a href="https://mathieubcd.com/midterm.mathieubcd.com/inspiration.html" target="_blank">
-    Inspiration</a>
+To come
 
 
 
