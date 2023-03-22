@@ -128,6 +128,64 @@ body {
   overflow-x: hidden;
 }
 
+/* HEADER AND PARAGRAPH STYLING */
+h1 {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6em;
+  color: var(--noir);
+}
+
+h2 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6em;
+  color: var(--noir);
+}
+
+h3 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6em;
+  color: var(--beige);
+}
+
+h4 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--beige);
+}
+
+h5 {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--noir);
+}
+
+h6 {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 600;
+  font-style:normal;
+  font-size: 1.6em;
+  margin: 0.67em 0;
+}
+
+p {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--noir);
+  line-height: 1.5;
+}
+
 /* A LINKS STYLING */
 
 a {
@@ -194,11 +252,65 @@ a:hover {
 
 ```
 <h4>NAVIGATION SIDE BAR</h4>
+
 ```text
+/* SIDE MENU */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index:1500;
+}
+
+
+.symbolenav {
+  background: url("../images/symbole.svg") no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  margin-top:60px;
+  margin-bottom: 40px;
+  margin-left: 32px;
+}
+
+.sidenav a {
+  font-family: supria-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--beige);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 1em;
+}
+
+
 ```
 
-
-5) JavasCript
+5) Javascript
 6) MediaQueries in CSS
 
 ## Creation process
