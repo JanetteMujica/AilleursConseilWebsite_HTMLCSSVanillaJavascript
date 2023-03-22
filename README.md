@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://mathieubcd.com/" target="_blank">
-    <img src="https://www.mathieubcd.com/images/icone_publications.jpg" alt="Logo" width=150 height=150>
+    <img src="https://mathieubcd.com/ailleursconseilolderversion.mathieubcd.com/images/ailleurslogo.svg" alt="Logo" width=150 height=150>
   </a>
 
   <h3 align="center">Ailleurs Conseil Website</h3>
