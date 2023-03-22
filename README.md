@@ -58,7 +58,8 @@ AilleursConseilWebsite/
 ## How to implement a collapsed side navigation menu bar with hamburger icon
 
 <h3> 1) HTML </h3>
-HAMBURGER ICON AND LOGO
+<h4>HAMBURGER ICON AND LOGO</h4>
+
 In my header, I have a hamburger icon which is the span with the character &#9776; that has an onclick function "OpenNav()". I also have a logo that has a class of logorondactif on the index page and a class of logoversindex on secondary pages (if the user clicks, he will be directed to the index page).
 
 ```text
