@@ -133,7 +133,6 @@ body {
 a {
   color: var(--noir);
   font-weight: bold;
-  /* text-decoration: underline; */
   }
   /* unvisited link */
 a:link {
@@ -145,7 +144,6 @@ a:link {
 /* visited link */
 a:visited {
   color: var(--noir);
-  /* text-decoration: underline; */
 }
 
 /* mouse over link */
